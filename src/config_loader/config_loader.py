@@ -2,14 +2,23 @@ import json
 from pydantic import BaseModel, Field
 from typing import Optional
 
+
 class OpenAIModelConfig(BaseModel):
-    system_prompt: str = Field(..., description="System prompt for the travel assistant")
+    system_prompt: str = Field(
+        ..., description="System prompt for the travel assistant"
+    )
     model_name: str = Field(..., description="OpenAI model name")
-    temperature: Optional[float] = Field(default=0.6, description="Temperature for response generation")
+    temperature: Optional[float] = Field(
+        default=0.6, description="Temperature for response generation"
+    )
+
 
 class Config(BaseModel):
-    destinations_filename: str = Field(..., description="Excel file containing destinations details")
+    destinations_filename: str = Field(
+        ..., description="Excel file containing destinations details"
+    )
     openAI_model_config: OpenAIModelConfig
+
 
 def config_loader(config_path: str) -> Config:
     try:
