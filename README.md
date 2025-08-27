@@ -1,1 +1,1 @@
-# GENAI-travel-agent-openai-huggingfacespaces
+# AI Travel Assistant using OpenAI and Gradio (Under Construction)
