@@ -1,0 +1,2 @@
+class DataSchema:
+    DESTINATION = "destination"

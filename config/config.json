@@ -1,0 +1,8 @@
+{   
+    "destinations_filename": "data/destinations_infos.xlsx",
+    "openAI_model_config": {
+        "system_prompt": "You are a travel assistant. Answer in English based on the provided information. If the user asks about a destination, use the data from the Excel file.",
+        "model_name": "gpt-4o-mini",
+        "temperature": 0.1
+    }
+}
